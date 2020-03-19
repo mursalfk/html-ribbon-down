@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow</title>
+</head>
+<body>
+    <div id="ribbon"></div>
+</body>
+</html>
+
+<style>
+   #ribbon {
+      background:darkblue;
+      display: inline-block;
+      margin-left: 20px;
+      top: -10px;
+      position: relative;
+      width: 100px;
+      height: 150px;
+      float: top;
+    }
+    #ribbon:before {
+      border-bottom: 35px solid darkblue;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: 150px;
+      width: 0;
+      transform: rotate(180deg);
+    }
+  
+</style>
